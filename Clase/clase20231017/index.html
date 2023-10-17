@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        tr,
+        td, th {
+            border: 1px black solid;
+            padding: 50px;
+            width: 100px;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <h2>Tablas de clase</h2>
+    <table>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <td colspan="2">1</td>
+            <td rowspan="2">3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+
+        </tr>
+    </table>
 </body>
+
 </html>
