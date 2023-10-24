@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        div{
+            padding: 10px;
+        }
+        input{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--En los formularios son mmuy importantes los atributos (no solo las etiquetas)-->
+    <!--Para la etiqueta form:
+    
+        action es la pagina del servidor web al que enviamos la informacion del formulario
+
+        method es el método HTTP de envio (get | post | put)
+
+        id es el identificador único del elemento en que esté 
+
+
+    -->
+    <form action="index.html" method="get" id="mi-formulario">
+        <div>
+            <label for="cuadrado-de-texto">Nombre:</label>
+            <input type="text" name="nombre" id="cuadrado-de-texto" placeholder="Nombre">
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </div>
+        <div>
+            <h2>Radio button: solo se pueden usar seleccionar uno</h2>
+            <p>"¿Cual es tu leguaje web favorito?"</p>
+
+            <input type="radio" name="lenguaje" id="Html" value="html">
+            <label for="Html">HTML</label>
+            
+            <input type="radio" name="lenguaje" id="Css" value="css">
+            <label for="Css">CSS</label>
+
+            <input type="radio" name="lenguaje" id="Js" value="js">
+            <label for="Js">JS</label>
+
+        </div>
+
+        
+    </form>
+    <div id="resultado">
+        <p id="nombre-valor"></p>
+        <p id="lenguaje-valor"></p>
+    </div>
+   
+    <script>
+
+        document.getElementById("mi-formulario").addEventListener("submit", function (event) { event.preventDefault(); 
+        const formulario = event.target; 
+        const nombre = formulario.elements["nombre"].value;
+        const lenguaje = formulario.elements["lenguaje"].value; 
+        
+        document.getElementById("nombre-valor").textContent = "Nombre: " + nombre;
+        document.getElementById("lenguaje-valor").textContent = "Lenguaje: " + lenguaje;
+        })
+        
+    </script>
+</body>
+</html>
