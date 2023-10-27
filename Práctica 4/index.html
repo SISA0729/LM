@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario SISA</title>
+    <style>
+        body {
+            padding-right: 20%;
+            padding-left: 20%;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        .primera {
+            float: left;
+            width: 30%;
+        }
+
+        .segunda {
+            float: left;
+            width: 120%;
+        }
+
+        p {
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="formulario">
+        <h2>Registro de DEVs</h2>
+        <h4>Completa los siguentes campos</h4>
+        <fieldset>
+            <p class="primera">
+                <label for="Nombre">Nombre (obligatorio)</label>
+                <input type="text" name="nombre" id="nombre">
+            </p>
+            <p class="primera">
+                <label for="Apellidos">Apellidos (obligatorios)</label>
+                <input type="text" name="apellidos" id="apellidos">
+            </p>
+            <p class="segunda">
+                <label for="Email">Email (obligatorio)</label><br>
+                <input type="email" name="email" id="email">
+            </p>
+        </fieldset>
+        <fieldset>
+            <p>
+                <label for="circulo">Indica en qué lado de la aplicación desarrollas</label><br>
+                <input type="radio" name="radio1" id="radio1">
+                <label for="radio1">Front-end</label><br>
+                <input type="radio" name="radio1" id="radio2">
+                <label for="radio1">Black-end</label><br>
+                <input type="radio" name="radio1" id="radio3">
+                <label for="radio1">Full-end</label>
+            </p>
+            <p>
+                <label for="Nevel">Nivel de experiencia</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <p>
+                <label for="Nivel">Nivel de experiencia</label><br>
+                <select name="kami" id="kami">
+                    <option value="Select">Selecciona una de las opciones</option>
+                    <option value="Junior">Junior</option>
+                    <option value="Senior">Senior</option>
+                    <option value="Experto">Experto</option>
+
+                </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <p>
+                <label for="Tecnologias">Selecciona las tecnologías que utilizas:</label><br><br>
+                <input type="checkbox" name="html" id="html">
+                <label for="html">HTML</label>
+                <input type="checkbox" name="css" id="css">
+                <label for="css">CSS</label>
+                <input type="checkbox" name="javaS" id="javaS">
+                <label for="javaS">JavaSScript</label>
+                <input type="checkbox" name="php" id="php">
+                <label for="php">PHP</label>
+                <input type="checkbox" name="c" id="c">
+                <label for="C#">C#</label>
+                <input type="checkbox" name="phthon" id="phthon">
+                <label for="phthon">Python</label>
+                <input type="checkbox" name="java" id="java">
+                <label for="java">Java</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <p>
+                <label for="Texto">Cuenta algo más acerca de tu experiencia:</label><br><br>
+                <textarea name="escribe" id="escribe" cols="60" rows="8"></textarea>
+            </p>
+        </fieldset>
+        <fieldset>
+            <input type="submit" value="Enviar">
+        </fieldset>
+
+    </form>
+</body>
+
+</html>

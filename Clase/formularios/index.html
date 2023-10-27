@@ -48,12 +48,26 @@
             <label for="Js">JS</label>
 
         </fieldset>
+        <fieldset>
+            <h2>Casillas de verificacion: puede heber mas de una casilla</h2>
+            <p>¿Cual son tus aficiones?</p>
+            <input type="checkbox" name="futbol" id="futbol" value="futbol">
+            <label for="ft">futbol</label>
+            <input type="checkbox" name="baile" id="baile" value="leer">
+            <label for="bl">baile</label>
+            <input type="checkbox" name="leer" id="leer" value="leer">
+            <label for="lr">leer</label>
+        </fieldset>
 
         
     </form>
     <div id="resultado">
         <p id="nombre-valor"></p>
         <p id="lenguaje-valor"></p>
+        <p id="checkbox1-valor"> </p>
+        <p id="checkbox2-valor"> </p>
+        <p id="checkbox3-valor"> </p>
+
     </div>
    
     <script>
@@ -62,9 +76,17 @@
         const formulario = event.target; 
         const nombre = formulario.elements["nombre"].value;
         const lenguaje = formulario.elements["lenguaje"].value; 
+        const futbol = formulario.elements["futbol"].value;
+        const baile = formulario.elements["baile"].value;
+        const leer = formulario.elements["leer"].value;
+
         
         document.getElementById("nombre-valor").textContent = "Nombre: " + nombre;
         document.getElementById("lenguaje-valor").textContent = "Lenguaje: " + lenguaje;
+        document.getElementById("checkbox1-valor").textContent = "Futbol: " + futbol;
+        document.getElementById("checkbox2-valor").textContent = "Baile: " + baile;
+        document.getElementById("checkbox3-valor").textContent = "Leer: " + leer;
+
         })
         
     </script>
