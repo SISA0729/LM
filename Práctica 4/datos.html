@@ -9,13 +9,17 @@
     const urlParams = new URLSearchParams(window.location.search);
     const nombre = urlParams.get('nombre');
     const email = urlParams.get('email');
+    const apellidos = urlParams.get('apellidos');
+    const Radio1 = urlParams.get('Radio1');
+
 
     document.write('<h2>Información enviada:</h2>');
     document.write('<p>Nombre: ' + nombre + '</p>');
+    document.write('<p>Apellidos: ' + apellidos + '</p>');
     document.write('<p>Email: ' + email + '</p>');
+    document.write('<p> Indica en qué lado de la aplicación desarrollas: ' + radio1 + '</p>');
 
-    // Redirigir a datos.html con los parámetros de la URL
-    window.location.href = 'datos.html?' + urlParams.toString();
+
 </script>
 
 </body>
