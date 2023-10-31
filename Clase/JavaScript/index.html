@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Clses de JavaScript</title>
+</head>
+
+<body id="pagina">
+    <input type="button" value="Disminuye" onclick="Disminuye();">
+    <input type="button" value="Aumenta" onclick="Aumenta();">
+    <input type="button" value="Muestra" onclick="Muestra();">
+    <input type="reset" value="Borrar" id="borrar">
+    <div id="midiv">
+        <script>
+            function Aumenta() {
+                for (var i = 6; i >= 1; i--) {
+                    document.getElementById("midiv").innerHTML += "<h" + i + ">Cabecera de nivel " + i + "</h" + i;
+                }
+            }
+        </script>
+
+    </div>
+
+    <div id="midiv2">
+        <script>
+            function Disminuye() {
+                for (var i = 1; i <= 6; i++) {
+                    document.getElementById("midiv").innerHTML += "<h" + i + ">Cabecera de nivel " + i + "</h" + i;
+                }
+            }
+            function Muestra({
+                document.getElementById("midiv").innerHTML="";
+                for (var i = 1; i <= 6; i++){
+                    document.getElementById("midiv").innerHTML += "<ll" + i "style 'color: " + color
+                }
+            })
+        </script>
+
+    </div>
+
+    <script>
+        const $pagina = document.querySelector("#pagina");
+        const $borrar = document.querySelector("#borrar");
+
+        $borrar.addEventListener("click", () => {
+            $pagina.innerHTML = "";
+        });
+    </script>
+</body>
+
+</html>

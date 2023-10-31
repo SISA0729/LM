@@ -7,8 +7,22 @@
     <title>Formulario SISA</title>
     <style>
         body {
-            padding-right: 20%;
+            background-color: black;
+            color: white;
             padding-left: 20%;
+            padding-right: 20%;
+        }
+
+        #nombre {
+            width: 90%;
+        }
+
+        #apellidos {
+            width: 90%;
+        }
+
+        #email {
+            width: 90%;
         }
 
         h2 {
@@ -21,41 +35,50 @@
 
         .primera {
             float: left;
-            width: 30%;
+            width: 50%;
         }
 
         .segunda {
             float: left;
-            width: 120%;
+            width: 50%;
+        }
+
+        select {
+            width: 100%;
         }
 
         p {
             float: left;
+
+        }
+
+        textarea {
+            width: 100%;
         }
     </style>
 </head>
 
 <body>
-    <form action="formulario">
+    <form action="formulario" class="formulario" id="formulario-sisa">
         <h2>Registro de DEVs</h2>
         <h4>Completa los siguentes campos</h4>
         <fieldset>
             <p class="primera">
-                <label for="Nombre">Nombre (obligatorio)</label>
+                <label for="nombre">Nombre (obligatorio)</label>
                 <input type="text" name="nombre" id="nombre">
             </p>
             <p class="primera">
-                <label for="Apellidos">Apellidos (obligatorios)</label>
+                <label for="apellidos">Apellidos (obligatorios)</label>
                 <input type="text" name="apellidos" id="apellidos">
             </p>
             <p class="segunda">
-                <label for="Email">Email (obligatorio)</label><br>
+                <label for="email">Email (obligatorio)</label><br>
                 <input type="email" name="email" id="email">
             </p>
         </fieldset>
         <fieldset>
             <p>
-                <label for="circulo">Indica en qué lado de la aplicación desarrollas</label><br>
+                <label>Indica en qué lado de la aplicación desarrollas</label><br>
                 <input type="radio" name="radio1" id="radio1">
                 <label for="radio1">Front-end</label><br>
                 <input type="radio" name="radio1" id="radio2">
@@ -63,14 +86,11 @@
                 <input type="radio" name="radio1" id="radio3">
                 <label for="radio1">Full-end</label>
             </p>
-            <p>
-                <label for="Nevel">Nivel de experiencia</label>
-            </p>
         </fieldset>
         <fieldset>
             <p>
-                <label for="Nivel">Nivel de experiencia</label><br>
-                <select name="kami" id="kami">
+                <label>Nivel de experiencia</label><br>
+                <select name="nivel" id="nivel">
                     <option value="Select">Selecciona una de las opciones</option>
                     <option value="Junior">Junior</option>
                     <option value="Senior">Senior</option>
@@ -81,7 +101,7 @@
         </fieldset>
         <fieldset>
             <p>
-                <label for="Tecnologias">Selecciona las tecnologías que utilizas:</label><br><br>
+                <label>Selecciona las tecnologías que utilizas:</label><br><br>
                 <input type="checkbox" name="html" id="html">
                 <label for="html">HTML</label>
                 <input type="checkbox" name="css" id="css">
@@ -91,7 +111,7 @@
                 <input type="checkbox" name="php" id="php">
                 <label for="php">PHP</label>
                 <input type="checkbox" name="c" id="c">
-                <label for="C#">C#</label>
+                <label for="c">C#</label>
                 <input type="checkbox" name="phthon" id="phthon">
                 <label for="phthon">Python</label>
                 <input type="checkbox" name="java" id="java">
@@ -100,7 +120,7 @@
         </fieldset>
         <fieldset>
             <p>
-                <label for="Texto">Cuenta algo más acerca de tu experiencia:</label><br><br>
+                <label for="escribe">Cuenta algo más acerca de tu experiencia:</label><br><br>
                 <textarea name="escribe" id="escribe" cols="60" rows="8"></textarea>
             </p>
         </fieldset>
@@ -109,6 +129,6 @@
         </fieldset>
 
     </form>
-</body>
 
+</body>
 </html>
