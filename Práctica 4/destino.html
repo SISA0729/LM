@@ -1,28 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destino SISA</title>
     <style>
-         body {
+        body {
             font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
             background-color: #6773AA;
-            justify-content: center;
             color: white;
+            justify-content: center;
+        }
+
+        table {
+            width: 100%;
+            border-spacing: 0;
+            border: 1px black solid;
+            background-color: rgb(61, 67, 77);
+
+        }
+
+        th {
+            padding: 20px 15px;
+        }
+
+        td {
+            padding: 15px;
+        }
+
+        .datos:hover {
+            background-color: #737FB2;
         }
     </style>
 </head>
-<body>
-    <h2>Información almacenada</h2>
 
-    <p><b>Nombre:</b> <span id="nombre"></span></p>
-    <p><b>Apellidos:</b> <span id="apellidos"></span></p>
-    <p><b>Email: </b><span id="email"></span></p>
-    <p><b>Desarrollo: </b><span id="radio1"></span></p>
-    <p><b>Nivel de experiencia: </b><span id="nivel"></span></p>
-    <p><b>Tecnologías utilizadas: </b><span id="tecnologias"></span></p>
-    <p><b>Otra experiencia: </b><span id="experiencia"></span></p>
+<body>
+    <h2>Información del formulario</h2>
+    <div>
+        <table>
+            <tr>
+                <th><b>Nombre</b></th>
+                <th><b>Apellidos</b></th>
+                <th><b>Email</b></th>
+                <th><b>Desarrollo</b></th>
+                <th><b>Nivel de experiencia</b></th>
+                <th><b>Tecnologías utilizadas</b></th>
+                <th><b>Otra experiencia</b></th>
+
+            </tr>
+            <tr class="datos">
+                <td>Ismael</td>
+                <td>Sisa</td>
+                <td>Ismael.sisa@educa.madrid.org</td>
+                <td>Black-end</td>
+                <td>Junior</td>
+                <td>HTML, CSS</td>
+                <td>⚽</td>
+            </tr>
+            <tr class="datos">
+
+                <td><span id="nombre"></span></td>
+                <td><span id="apellidos"></span></td>
+                <td><span id="email"></span></td>
+                <td><span id="radio1"></span></td>
+                <td><span id="nivel"></span></td>
+                <td><span id="tecnologias"></span></td>
+                <td><span id="experiencia"></span></td>
+            </tr>
+
+        </table>
+    </div>
+
+
 
     <script>
         document.getElementById('nombre').innerText = localStorage.getItem('nombre') || '';
@@ -45,4 +96,5 @@
     </script>
 
 </body>
+
 </html>
