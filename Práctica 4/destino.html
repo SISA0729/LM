@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destino SISA</title>
+    <style>
+         body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #6773AA;
+            justify-content: center;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <h2>Información almacenada</h2>
 
-    <p>Nombre: <span id="nombre"></span></p>
-    <p>Apellidos: <span id="apellidos"></span></p>
-    <p>Email: <span id="email"></span></p>
-    <p>Desarrollo: <span id="radio1"></span></p>
-    <p>Nivel de experiencia: <span id="nivel"></span></p>
-    <p>Tecnologías utilizadas: <span id="tecnologias"></span></p>
-    <p>Otra experiencia: <span id="experiencia"></span></p>
+    <p><b>Nombre:</b> <span id="nombre"></span></p>
+    <p><b>Apellidos:</b> <span id="apellidos"></span></p>
+    <p><b>Email: </b><span id="email"></span></p>
+    <p><b>Desarrollo: </b><span id="radio1"></span></p>
+    <p><b>Nivel de experiencia: </b><span id="nivel"></span></p>
+    <p><b>Tecnologías utilizadas: </b><span id="tecnologias"></span></p>
+    <p><b>Otra experiencia: </b><span id="experiencia"></span></p>
 
     <script>
         document.getElementById('nombre').innerText = localStorage.getItem('nombre') || '';
