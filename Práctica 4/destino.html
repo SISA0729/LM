@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destino SISA</title>
+</head>
+<body>
+    <h2>Información almacenada</h2>
+
+    <p>Nombre: <span id="nombre"></span></p>
+    <p>Apellidos: <span id="apellidos"></span></p>
+    <p>Email: <span id="email"></span></p>
+    <p>Desarrollo: <span id="radio1"></span></p>
+    <p>Nivel de experiencia: <span id="nivel"></span></p>
+    <p>Tecnologías utilizadas: <span id="tecnologias"></span></p>
+    <p>Otra experiencia: <span id="experiencia"></span></p>
+
+    <script>
+        document.getElementById('nombre').innerText = localStorage.getItem('nombre') || '';
+        document.getElementById('apellidos').innerText = localStorage.getItem('apellidos') || '';
+        document.getElementById('email').innerText = localStorage.getItem('email') || '';
+        document.getElementById('radio1').innerText = localStorage.getItem('radio1') || '';
+        document.getElementById('nivel').innerText = localStorage.getItem('nivel') || '';
+
+        var tecnologias = [];
+        if (localStorage.getItem('html') === 'true') tecnologias.push('HTML');
+        if (localStorage.getItem('css') === 'true') tecnologias.push('CSS');
+        if (localStorage.getItem('javaS') === 'true') tecnologias.push('JavaScript');
+        if (localStorage.getItem('php') === 'true') tecnologias.push('PHP');
+        if (localStorage.getItem('c') === 'true') tecnologias.push('C#');
+        if (localStorage.getItem('phthon') === 'true') tecnologias.push('Python');
+        if (localStorage.getItem('java') === 'true') tecnologias.push('Java');
+
+        document.getElementById('tecnologias').innerText = tecnologias.join(', ');
+        document.getElementById('experiencia').innerText = localStorage.getItem('escribe') || '';
+    </script>
+
+</body>
+</html>

@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario SISA</title>
     <style>
         body {
-            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #6773AA;
+            justify-content: center;
+            display: flex;
             color: white;
             padding-left: 20%;
             padding-right: 20%;
         }
 
+        form {
+            padding: 50px 50px;
+            box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+            border-radius: 20px;
+            width: 70%;
+            background-color: #737FB2;
+        }
+
+        fieldset {
+            border: none;
+        }
+
         #nombre {
-            width: 90%;
+            width: 93%;
         }
 
         #apellidos {
-            width: 90%;
+            width: 100%;
         }
 
         #email {
-            width: 90%;
+            width: 93%;
         }
 
         h2 {
@@ -55,11 +69,15 @@
         textarea {
             width: 100%;
         }
+
+        #enviar {
+            width: 100%;
+            padding: 10px;
+        }
     </style>
 </head>
-
 <body>
-    <form action="datos.html" class="formulario" id="formulario-sisa">
+    <form>
         <h2>Registro de DEVs</h2>
         <h4>Completa los siguentes campos</h4>
         <fieldset>
@@ -79,12 +97,12 @@
         <fieldset>
             <p>
                 <label>Indica en qué lado de la aplicación desarrollas</label><br>
-                <input type="radio" name="radio1" id="radio1">
-                <label for="radio1">Front-end</label><br>
+                <input type="radio" name="radio1" id="radio0">
+                <label for="radio0" id="dato1">Front-end</label><br>
                 <input type="radio" name="radio1" id="radio2">
-                <label for="radio1">Black-end</label><br>
+                <label for="radio2" id="dato2">Black-end</label><br>
                 <input type="radio" name="radio1" id="radio3">
-                <label for="radio1">Full-end</label>
+                <label for="radio3" id="dato3">Full-end</label>
             </p>
         </fieldset>
         <fieldset>
@@ -125,10 +143,43 @@
             </p>
         </fieldset>
         <fieldset>
-            <input type="submit" value="Enviar">
+            <button onclick="enviarInformacion()">Enviar</button>
         </fieldset>
 
     </form>
 
+
+    <script>
+        function enviarInformacion() {
+            var nombre = document.getElementById('nombre').value;
+            var apellidos = document.getElementById('apellidos').value;
+            var email = document.getElementById('email').value;
+            var radio1 = document.querySelector('input[name="radio1"]:checked').value;
+            var nivel = document.getElementById('nivel').value;
+            var html = document.getElementById('html').checked;
+            var css = document.getElementById('css').checked;
+            var javaS = document.getElementById('javaS').checked;
+            var php = document.getElementById('php').checked;
+            var c = document.getElementById('c').checked;
+            var phthon = document.getElementById('phthon').checked;
+            var java = document.getElementById('java').checked;
+            var escribe = document.getElementById('escribe').value;
+
+            localStorage.setItem('nombre', nombre);
+            localStorage.setItem('apellidos', apellidos);
+            localStorage.setItem('email', email);
+            localStorage.setItem('radio1', radio1);
+            localStorage.setItem('nivel', nivel);
+            localStorage.setItem('html', html);
+            localStorage.setItem('css', css);
+            localStorage.setItem('javaS', javaS);
+            localStorage.setItem('php', php);
+            localStorage.setItem('c', c);
+            localStorage.setItem('phthon', phthon);
+            localStorage.setItem('java', java);
+            localStorage.setItem('escribe', escribe);
+
+        }
+    </script>
 </body>
 </html>
