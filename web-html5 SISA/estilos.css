@@ -28,7 +28,13 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li ul{
+nav ul li ul {
     display: none;
-    po
+}
+
+nav ul li:hover ul {
+    display: block;
+    position: absolute;
+    background-color: white;
+    border: 1px black solid;
 }
