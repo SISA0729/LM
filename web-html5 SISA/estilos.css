@@ -122,7 +122,26 @@ section{
     border-radius: 20px;
 }
 
+.articulo2{
+    margin-top: 100px;
+    float: left;
+}
+.FTO2{
+    box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.6);
+    width: 50%;
+    float: left;
 
+}
+.Estilos{
+    width: 40%;
+    float: left;
+    padding: 45px;
+}
+.Estilos h1{
+    color: white;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 
 /*------------------------------------ FOOTER --------------------------------*/
