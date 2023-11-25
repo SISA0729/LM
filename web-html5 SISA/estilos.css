@@ -313,8 +313,45 @@ iframe{
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.6);
 
 }
+.img10{
+    width: 40%;
+    float: right;
+    margin-left: 20px;
+    margin-top: 40px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.6);
+}
 
-/* formulario */
+/*------------------ TABLAS --------------------*/
+
+.tablas-principales{
+    width: 100%;
+
+}
+.tabla1 {
+    border-collapse: collapse;
+    width: 50%;
+    float: left;
+    
+}
+.tabla1 td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+
+}
+.tabla-ejemplo{
+    float: right;
+    width: 90%;
+    font-size: smaller;
+    font-size: 10px;
+
+}
+.tablas2{
+    float: left;
+    width: 50%;
+}
+
+/*------------------ FORMULARIO --------------------*/
 
 form{
     text-align: center;
