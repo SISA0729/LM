@@ -74,12 +74,12 @@ section{
 }
 
 .inicio-cuadrados{
-    width: 31%;
+    width: 29%;
     float: left;
     margin: 1%;
-    background-color: ;
     box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.6);
-    border-radius: 20px;  
+    border-radius: 20px;
+    padding: 10px;  
 }
 
 .articulo2{
@@ -306,6 +306,10 @@ iframe{
 .TAB th td{
     width: 50%;
 }
+.pau{
+    background-color:  rgba(255, 187, 84, 0.89);
+    color: black;
+}
 .img-tablas{
     width: 40%;
     margin-top: 5%;
@@ -349,6 +353,24 @@ iframe{
 .tablas2{
     float: left;
     width: 50%;
+}
+/*------------------ BLOQUES --------------------*/
+
+.img11{
+    width: 45%;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.6);
+    float: left;
+    margin-right: 40px;
+    
+}
+.bloques2{
+    float: left;
+    width: 50%;
+}
+.bloques3{
+    float: left;
+    margin-top: 5%  ;
+    margin-left: 35%;
 }
 
 /*------------------ FORMULARIO --------------------*/
