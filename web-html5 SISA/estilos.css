@@ -176,6 +176,7 @@ h3{
     margin-right: 50px;
 
 }
+
 th{
     background-color: #f37431;
 }
@@ -250,6 +251,33 @@ iframe{
     height: 560px;
     margin-top: 5%;
 }
+
+/*------------------ IMAGENES --------------------*/
+.imagenens-principales{
+    width: 100%;
+    float: left;
+}
+.imagenes1{
+    width: 50%;
+    float: left;
+}
+.imagenes3{
+    width: 100%;
+}
+
+.img1{
+    width: 45%;
+    float: right;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+.img5{
+    margin-left: 20px;
+    margin-top: 15%;
+    width: 45%;
+}
+
+
 
 /* formulario */
 
