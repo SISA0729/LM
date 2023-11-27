@@ -52,7 +52,10 @@ nav ul li:hover ul {
 
 /*------------------------------------ CONTENIDO --------------------------------*/
 /*------------------ INDEX --------------------*/
-
+.inicio{
+    width: 100px ;
+    height: 100px;
+}
 .FTO{
     width: 100%;
     height: 700px;
@@ -68,7 +71,9 @@ nav ul li:hover ul {
     top: 50%;
     margin: 30px;
 }
-
+.img-tabla{
+    width: 100%;
+}
 section{
     padding: 50px;
 }
@@ -254,6 +259,7 @@ iframe{
     height: 560px;
     margin-top: 5%;
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.6);
+    
 }
 
 /*------------------ IMAGENES --------------------*/
@@ -373,7 +379,11 @@ iframe{
     margin-left: 35%;
 }
 
-/*------------------ FORMULARIO --------------------*/
+/*------------------ SEMANTICAS --------------------*/
+
+
+
+/*------------------ CONTACTO --------------------*/
 
 form{
     text-align: center;
