@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+    color: white;
+}
+.container{
+    display: flex;
+    border: 1px solid white;
+}
+.cajita{
+    background: yellow;
+    width: 75px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    max-height: 75px;
+    
+}
