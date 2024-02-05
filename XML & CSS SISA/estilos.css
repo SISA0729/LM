@@ -1,0 +1,155 @@
+curriculum {
+    display: table;
+    border-spacing: 10px;
+    border: 1px black solid;
+    width: 30%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 15px;
+    
+}
+foto {
+    float: right;
+    width: 100px;
+    height: 120px;
+    background-color: #6D859C;
+    color: white;
+}
+informacion_personal {
+    display: table;
+    border-spacing: 10px;
+    border: 1px black solid;
+    width: 100%;
+    background-color: #38444F;
+
+}
+datos {
+    background-color: #526475;
+    display: block;
+    padding: 10px;
+    height: 125px;
+}
+
+nombre {
+    padding-left: 10px;
+    padding-right: 4px;
+    display: inline;
+    font-weight: bolder;
+    color: white;
+    font-size: 30px;
+}
+apellidos {
+    display: inline;
+    font-weight: bolder;
+    color: white;
+    font-size: 30px;
+}
+año_nacimiento{
+    padding: 10px;
+    display: block;
+    font-weight: bolder;
+    color: white;
+}
+residencia {
+    padding: 10px;
+    display: block;
+
+}
+lugar {
+    padding: 10px;
+    display: flex;
+    background-color: #6D859C;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+
+}
+ciudad, pais, telefono, correo{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+competencias {
+    display: block;
+    padding: 10px;
+    background-color: #6D859C;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+}
+ciudad::before{
+    content: "Ciudad de recidencia: ";
+    color: white;
+}
+pais::before{
+    content: "Pais: ";
+    color: white;
+}
+competencias::before{
+    content: "COMPETENCIAS";
+    display: flex;
+   justify-content: center;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: white;
+   font-weight: bold;
+
+}
+formacion_academica::before{
+    content: "FORMACION ACADEMICA";
+    display: flex;
+    justify-content: center;    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: bold;
+
+
+
+ }
+
+experiencia_profesional::before{
+    content: "EXPERIENCIA PROFECIONAL";
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: bold;
+
+
+ }
+
+
+nivel, nombree{
+    display: block;
+    padding: 10px;
+}
+formacion_academica {
+    display: block;
+    padding: 10px;
+    background-color: #6D859C;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+titulo, centro_formacion, año_titulacion{
+    display: block;
+    padding: 10px;
+}
+
+experiencia_profesional{
+    display: block;
+    padding: 10px;
+    background-color: #6D859C;
+    border-radius: 20px;
+}
+puesto, empresa {
+    display: block;
+    padding: 10px;
+}
+
+
+año, año_inicio, año_fin{
+    display: flex;
+    padding: 10px;
+}

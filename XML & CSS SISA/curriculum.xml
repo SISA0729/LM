@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="estilos.css"?>
+<curriculum>
+    <informacion_personal>
+        <datos>
+            <foto>foto</foto>
+            <nombre> ISMAEL</nombre>
+            <apellidos>SISA</apellidos>
+            <año_nacimiento>Año de nacimiento: 2002</año_nacimiento>
+        </datos>
+
+        <residencia>
+            <lugar>
+            <ciudad> Madrid</ciudad>
+            <pais>España</pais>
+            <contacto>
+                <telefono>telefono: 123456789</telefono>
+                <correo>correo: ismael.sisa@educa.madrid.org</correo>
+            </contacto>
+            </lugar>
+            <competencias>
+                <competencia>
+                    <nombree> Nombre de la competencia: ********</nombree>
+                    <nivel>Nivel de la competencia: Profecional</nivel>
+                </competencia>
+            </competencias>
+
+            <formacion_academica>
+                <titulo>Titulo: Tecnico Informático</titulo>
+                <centro_formacion>Formacion: Grado Medio</centro_formacion>
+                <año_titulacion>Año de finalizacion: 2023</año_titulacion>
+            </formacion_academica>
+
+            <experiencia_profesional>
+                <puesto>Experiencia laboral: Desarrollador</puesto>
+                <empresa> Empresa: Pc Componentes</empresa>
+                <año>
+                <año_inicio>Año de inicio: 2023</año_inicio>
+                <año_fin>Año de fin: 2024</año_fin>
+                </año>
+            </experiencia_profesional>
+
+        </residencia>
+    </informacion_personal>
+</curriculum>
