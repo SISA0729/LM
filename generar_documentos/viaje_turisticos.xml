@@ -1,0 +1,26 @@
+<viaje_turisticos>
+    <datos>
+        <nombre>lorem</nombre>
+        <apellidos>lorem</apellidos>
+        <fecha_inicio>lorem</fecha_inicio>
+        <fecha_fin>lorem</fecha_fin>
+        <origen_de_viaje>lorem</origen_de_viaje>
+
+        <destinos>
+            <ciudad>
+                <nombre>lorem</nombre>
+            </ciudad>
+            <hotel>
+                <nombre>lorem</nombre>
+            </hotel>
+            <noches>
+                <numero>lorem</numero>
+            </noches>
+        </destinos>
+
+        <precio>
+            <cantidad>lorem</cantidad>
+        </precio>
+
+    </datos>
+</viaje_turisticos>
