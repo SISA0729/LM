@@ -1,0 +1,77 @@
+<!DOCTYPE curriculum [
+<!ELEMENT curriculum (informacion_personal)>
+<!ELEMENT informacion_personal (datos, residencia)>
+<!ELEMENT datos (foto, nombre, apellidos, año_nacimiento)>
+<!ELEMENT foto (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT año_nacimiento (#PCDATA)>
+
+<!ELEMENT residencia (lugar, competencias, formacion_academica, experiencia_profesional)>
+<!ELEMENT lugar (ciudad, pais, contacto)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT contacto (telefono, correo)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT correo (#PCDATA)>
+
+<!ELEMENT competencias (competencia)>
+<!ELEMENT competencia (nombree, nivel)>
+<!ELEMENT nombree (#PCDATA)>
+<!ELEMENT nivel (#PCDATA)>
+
+<!ELEMENT formacion_academica (titulo, centro_formacion, año_titulacion)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT centro_formacion (#PCDATA)>
+<!ELEMENT año_titulacion (#PCDATA)>
+
+<!ELEMENT experiencia_profesional (puesto, empresa, año)>
+<!ELEMENT puesto (#PCDATA)>
+<!ELEMENT empresa (#PCDATA)>
+<!ELEMENT año (año_inicio, año_fin)>
+<!ELEMENT año_inicio (#PCDATA)>
+<!ELEMENT año_fin (#PCDATA)>
+]>
+<curriculum>
+    <informacion_personal>
+        <datos>
+            <foto>foto</foto>
+            <nombre> ISMAEL</nombre>
+            <apellidos>SISA</apellidos>
+            <año_nacimiento>Año de nacimiento: 2002</año_nacimiento>
+        </datos>
+
+        <residencia>
+            <lugar>
+            <ciudad> Madrid</ciudad>
+            <pais>España</pais>
+            <contacto>
+                <telefono>123456789</telefono>
+                <correo>ismael.sisa@educa.madrid.org</correo>
+            </contacto>
+            </lugar>
+            <competencias>
+                <competencia>
+                    <nombree> Nombre de la competencia: ********</nombree>
+                    <nivel>Nivel de la competencia: Profecional</nivel>
+                </competencia>
+            </competencias>
+
+            <formacion_academica>
+                <titulo>Titulo: Tecnico Informático</titulo>
+                <centro_formacion>Formacion: Grado Medio</centro_formacion>
+                <año_titulacion>Año de finalizacion: 2023</año_titulacion>
+            </formacion_academica>
+
+            <experiencia_profesional>
+                <puesto>Experiencia laboral: Desarrollador</puesto>
+                <empresa> Empresa: Pc Componentes</empresa>
+                <año>
+                <año_inicio>Año de inicio: 2023</año_inicio>
+                <año_fin>Año de fin: 2024</año_fin>
+                </año>
+            </experiencia_profesional>
+
+        </residencia>
+    </informacion_personal>
+</curriculum>
