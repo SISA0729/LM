@@ -2,6 +2,8 @@
 <!DOCTYPE curriculum [
   <!ELEMENT curriculum (nombre y apellidos, año_nacimiento, recidencia, datos_contacto
   breve_descripcion,competencia,formacion_academica*,experiencia_laboral*)>
+  <!ELEMENT nombre_y_apellidos (#PCDATA)>
+  <!ELEMENT año_nacimiento (PCDATA)>
   <!ELEMENT recidencia (ciudad, pais)>
   <!ELEMENT ciudad (#PCDATA)>
   <!ELEMENT pais (#PCDATA)>
@@ -11,7 +13,7 @@
   <!ELEMENT correo (#PCDATA)>
   <!ELEMENT perfil_linkedln (#PCDATA)>
 
-  <!ELEMENT competencia (nombre, nivel)
+  <!ELEMENT competencia (nombre, nivel)>
   <!ELEMENT nombre (#PCDATA)>
   <!ELEMENT nivel (#PCDATA)>
 
