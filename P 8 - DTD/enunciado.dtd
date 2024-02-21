@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE curriculum [
+  <!ELEMENT curriculum (nombre y apellidos, año_nacimiento, recidencia, datos_contacto
+  breve_descripcion,competencia,formacion_academica*,experiencia_laboral*)>
+  <!ELEMENT recidencia (ciudad, pais)>
+  <!ELEMENT ciudad (#PCDATA)>
+  <!ELEMENT pais (#PCDATA)>
+  
+  <!ELEMENT datos_contacto (telefono,correo,perfil_linkedln)>
+  <!ELEMENT telefono (#PCDATA)>
+  <!ELEMENT correo (#PCDATA)>
+  <!ELEMENT perfil_linkedln (#PCDATA)>
+
+  <!ELEMENT competencia (nombre, nivel)
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT nivel (#PCDATA)>
+
+  <!ELEMENT formacion_academica (titulación, centro_de_formación, año_titulación)>
+  <!ELEMENT titulación (#PCDATA)>
+  <!ELEMENT centro_de_formación (#PCDATA)>
+  <!ELEMENT año_titulación (#PCDATA)>
+
+  <!ELEMENT experiencia_laboral (puesto, empresa, año_inicio, año_fin)
+  <!ELEMENT puesto (#PCDATA)>
+  <!ELEMENT empresa (#PCDATA)>
+  <!ELEMENT año_inicio (#PCDATA)>
+  <!ELEMENT año_fin (#PCDATA)>
+
+]>
+
