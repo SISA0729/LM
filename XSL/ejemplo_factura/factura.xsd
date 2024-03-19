@@ -9,7 +9,15 @@
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="nombre" type="xs:string"/>
-                            <xs:element name="CIF" type="xs:string"/>
+                            
+                            <xs:element name="CIF"> 
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="9"></xs:length>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
