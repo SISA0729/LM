@@ -16,14 +16,14 @@
                             <xs:element name="expresion2">
                                 <xs:simpleType>
                                     <xs:restriction base="xs:string">
-                                        <xs:pattern value="Capítulo [0-9]+"/>
+                                        <xs:pattern value="Capítulo [0-9][0-9]"/>
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
                             <xs:element name="expresion3">
                                 <xs:simpleType>
                                     <xs:restriction base="xs:string">
-                                        <xs:pattern value="Capítulo [0-9]+"/>
+                                        <xs:pattern value="Capítulo [1-9][0-9]"/>
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
