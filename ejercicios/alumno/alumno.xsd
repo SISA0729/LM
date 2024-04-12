@@ -24,7 +24,7 @@
             <xs:attribute name="dni">
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
-                        <xs:pattern value="\d{8}[A-Z]"/>
+                        <xs:pattern value="5"/>
                     </xs:restriction>
                 </xs:simpleType>
             </xs:attribute>
