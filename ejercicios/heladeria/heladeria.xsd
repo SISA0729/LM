@@ -6,8 +6,8 @@
                 <xs:element name="helado">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="chocolate" type="xs:positiveInteger"></xs:element>
-                            <xs:element name="turron" type="xs:positiveInteger"></xs:element>
+                            <xs:element name="chocolate" type="xs:positiveInteger"/>
+                            <xs:element name="turron" type="xs:positiveInteger"/>
                         </xs:sequence>
                         <xs:attribute name="fabricación" type="xs:string"></xs:attribute>
                     </xs:complexType>
