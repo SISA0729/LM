@@ -9,12 +9,12 @@
                             <xs:element name="titulo" type="xs:string"></xs:element>
                             <xs:element name="autor" type="xs:string"></xs:element>
                             <xs:element name="email" type="xs:string"></xs:element>
-                            <xs:element name="version" type="xs:double"></xs:element>
+                            <xs:element name="version" type="xs:double" ></xs:element>
                             <xs:element name="fecha" type="xs:date"></xs:element>
                         </xs:sequence>
-                    </xs:complexType>
+                    </xs:complexType>   
                 </xs:element>
-                <xs:element name="part">
+                <xs:element name="part" minOccurs="1" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="q" minOccurs="1" maxOccurs="unbounded">

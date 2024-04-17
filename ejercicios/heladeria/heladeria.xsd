@@ -3,20 +3,13 @@
     <xs:element name="heladeria">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="helado">
+                <xs:element name="helado" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="chocolate" type="xs:positiveInteger"/>
                             <xs:element name="turron" type="xs:positiveInteger"/>
-                        </xs:sequence>
-                        <xs:attribute name="fabricación" type="xs:string"></xs:attribute>
-                    </xs:complexType>
-                </xs:element>
-                <xs:element name="helado">
-                    <xs:complexType>
-                        <xs:sequence>
                             <xs:element name="fresa" type="xs:positiveInteger"/>
-                            <xs:element name="vainilla" type="xs:positiveInteger"/>
+                            <xs:element name="vaiinilla" type="xs:positiveInteger"/>
                         </xs:sequence>
                         <xs:attribute name="fabricación" type="xs:string"></xs:attribute>
                     </xs:complexType>
