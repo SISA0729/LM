@@ -11,7 +11,7 @@
                             <xs:element name="fresa" type="xs:positiveInteger"/>
                             <xs:element name="vaiinilla" type="xs:positiveInteger"/>
                         </xs:sequence>
-                        <xs:attribute name="fabricación" type="xs:string"></xs:attribute>
+                        <xs:attribute name="fabricación" type="xs:date"></xs:attribute>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
